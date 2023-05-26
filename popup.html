@@ -1,0 +1,44 @@
+<html style="filter: grayscale(100%);">
+  <head>
+    <title>Boring Browser</title>
+    <style>
+      body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+      image {
+        cursor: pointer;
+        border: 1px solid grey;
+      }
+      .flex {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: space-between;
+      }
+      .justify-left {
+        justify-content: flex-start;
+      }
+    </style>
+  </head>
+  <body style="background:linear-gradient(lightgrey,darkgrey);width:fit-content;">
+    <h1 style="border-bottom:1px solid grey;margin:0;padding-bottom:8px; white-space: nowrap;">Boring Browser</h1>
+    <h4 style="margin:4px 0 8px 0; white-space: nowrap;">Customize your boredom below.</h4>
+    <label class="flex justify-left">
+      <p>Make Boring</p>
+      <input type="checkbox" id="enabled">
+    </label>
+    <div class="flex">
+      <p>Brightness</p>
+      <input type="range" min="50" max="100" class="slider" id="brightness">
+    </div>
+    <div class="flex">
+      <p>Contrast</p>
+      <input type="range" min="50" max="100" class="slider" id="contrast">
+    </div>
+    <div class="flex">
+      <p>Grayscale</p>
+      <input type="range" min="0" max="100" class="slider" id="grayscale">
+    </div>
+    <script src="popup.js">
+    </script>
+  </body>
+</html>
